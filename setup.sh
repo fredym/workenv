@@ -168,3 +168,11 @@ chmod 600 .ssh/*
 
 # Overwrite config files not suitable to be symlinked
 cp .dot/com.apple.Terminal.plist Library/Preferences/
+
+
+# List brew casks to cleanup manually
+CASKS_MANUAL_CLEANUP=$(ls -l /opt/homebrew-cask/Caskroom/ | awk '{if ($2 > 4) print $9}')
+if [ -n "$(echo $CASKS_MANUAL_CLEANUP | tr -d '\n')" ]; then
+  log "These Casks need manual cleanup: "
+  echo $CASKS_MANUAL_CLEANUP
+fi
