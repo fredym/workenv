@@ -1,0 +1,31 @@
+#!/bin/bash
+
+title()
+{
+  b=$(tput bold)
+  n=$(tput sgr0)
+
+  echo
+  echo "$b$1$n"
+  echo
+}
+
+
+if git rev-parse --git-dir > /dev/null 2>&1; then
+  title "Local branches:"
+  git branch
+
+  title "Last 10 commits:"
+  git log --pretty=format:"%C(auto)%h %ad | %s%d [%an]" --graph --date=short -10
+
+  title "Index status:"
+  git status -sb
+
+  title "Stash status:"
+  git stash list
+
+  title "Origin status:"
+  git remote show origin
+else
+  echo "Not a git repository."
+fi

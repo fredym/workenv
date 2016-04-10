@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# Based on the generator written by [Benoit Mortgat][1] and published by
+# [Simon Sheppard][2].
+#
+# [1]: http://ss64.com/pass/command-line.html
+# [2]: https://github.com/salsifis/ss64-password-generators
+
+
+function calc {
+  echo -n "$1:$2" \
+    | shasum -a 256 \
+    | perl -ne "s/([0-9a-f]{2})/print chr hex \$1/gie" \
+    | base64 \
+    | tr +/ Ea \
+    | cut -b 1-20 \
+    | tr -d "[[:space:]]"
+}
+
+read -rs -p 'M: ' m
+echo '' # line break
+
+read -rs -p 'K: ' k
+echo '' # line break
+
+calc $m "A"
+echo ""
+calc $m $k | pbcopy

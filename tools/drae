@@ -1,0 +1,12 @@
+#!/bin/bash
+
+FETCH_STRING="http://dle.rae.es/srv/fetch?id="
+QUERY_STRING="http://dle.rae.es/srv/search?w="
+OPTIONS="-dump -useragent=Lynx -display_charset UTF-8"
+
+if [ "$1" == "-i" ]; then
+  lynx $OPTIONS $FETCH_STRING$2
+else
+  lynx $OPTIONS $QUERY_STRING$1
+fi
+

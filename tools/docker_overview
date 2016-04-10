@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# source aliases
+. ~/.alias
+
+
+title()
+{
+  b=$(tput bold)
+  n=$(tput sgr0)
+
+  echo
+  echo "$b$1$n"
+  echo
+}
+
+
+title "HOSTS:"
+docker-machine ls
+ls -lh ~/.docker/machine/machines/default/disk.vmdk | awk '{ print $5 }'
+
+title "IMAGES:"
+docker images
+
+title "CONTAINERS:"
+docker ps -a
