@@ -53,6 +53,13 @@ alias jb='jekyll build'
 alias js='jekyll serve'
 
 
+# rails
+alias bundle='docker run --rm -v $(pwd):/opt/app -w /opt/app fredym/rails bundle --local'
+alias rails='docker run --rm -v $(pwd):/opt/app -w /opt/app fredym/rails rails'
+alias rails_new='rails new --skip-bundle'
+alias rails_server='docker run --rm -v $(pwd):/opt/app -w /opt/app -p 80:3000 fredym/rails rails server -b 0.0.0.0'
+
+
 # terraform
 alias t='terraform'
 alias ta='terraform apply'
