@@ -1,0 +1,3 @@
+Host incytde.gitlab.com
+  HostName gitlab.com
+  IdentityFile ~/.ssh/incytde

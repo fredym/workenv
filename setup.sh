@@ -135,3 +135,36 @@ ln -sf iTunes/iTunes\ Media/Automatically\ Add\ to\ iTunes.localized ~/Music/aut
 # Make tools executable
 log "Making tools executable..."
 chmod -R +x tools
+
+
+# Install config files
+log "Installing config files..."
+
+
+# Create symlink in homedir to config directory
+# This helps having short paths
+ln -sfh $(pwd)/config ~/.dot
+
+
+# Replace config files in homedir with symlinks to .dot config files
+cd
+ln -sf .dot/alias .alias
+ln -sf .dot/bashrc .bashrc
+ln -sf .dot/bash_profile .bash_profile
+ln -sf .dot/gitconfig .gitconfig
+ln -sf .dot/vimrc .vimrc
+ln -sf ../.dot/atom_config.cson .atom/config.cson
+
+
+# SSH configuration
+if ! [ -e .ssh ]; then
+  mkdir .ssh
+  chmod 700 .ssh
+fi
+ln -sf ../.dot/ssh_config .ssh/config
+ln -sf ../.dot/ssh_known_hosts .ssh/known_hosts
+chmod 600 .ssh/*
+
+
+# Overwrite config files not suitable to be symlinked
+cp .dot/com.apple.Terminal.plist Library/Preferences/

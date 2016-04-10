@@ -8,7 +8,7 @@ Installation
 ------------
 
 Clone this repo and run `setup.sh`. This will install a bunch of software using
-[brew].
+[brew]. Then the configuration files of some of these tools will be overwritten.
 
 _WARNING: `setup.sh` will set the computer name to `aleph`. You need to edit
 `setup.sh` and specify yours. This is being tracked on #9._
@@ -18,6 +18,14 @@ _WARNING: `setup.sh` will set the computer name to `aleph`. You need to edit
     $ cd workenv
     $ chmod +r setup.sh
     $ ./setup.sh
+
+
+
+config
+------
+
+The most relevant configuration files are stored in this directory and symlinked
+from `$HOME` by `setup.sh`.
 
 
 

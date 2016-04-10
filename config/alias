@@ -1,0 +1,71 @@
+# .alias
+
+
+# bash
+alias bk='rsync -av --delete'
+alias cl='clear'
+alias df='df -h'
+alias du='du -hd1'
+alias hexdump='hexdump -C'
+alias less='less -XE'
+alias ll='ls -alh -G'
+alias serve='ruby -run -e httpd . -p 4000'
+
+
+# docker
+alias d='docker'
+alias dc='docker-compose'
+alias denv='eval $(docker-machine env)'
+alias dm='docker-machine'
+alias ds='docker_overview'
+
+
+# git
+alias g='git'
+alias ga='git add'
+alias gac='git commit -a -m'
+alias gash='git stash'
+alias gb='git branch'
+alias gc='git commit -v'
+alias gd='git diff'
+alias gds='git diff --staged'
+alias gdt='git difftool --noprompt'
+alias gdts='git difftool --noprompt --staged'
+alias gf='git fetch'
+alias gg='git_overview'
+alias gh='git help'
+alias gl='git log --pretty=format:"%C(auto)%h %ad | %s%d [%an]" --graph --date=short'
+alias gm='git merge'
+alias go='git checkout'
+alias gr='git reset'
+alias grh='git reset HEAD'
+alias gs='git status -sb'
+alias gsl='git status -sb | grep -v "\.\."'
+alias gsr='git remote show origin'
+alias gsync='go master; gull; go develop; gull;'
+alias gull='git pull'
+alias gush='git push'
+
+
+# jekyll
+alias j='jekyll'
+alias jb='jekyll build'
+alias js='jekyll serve'
+
+
+# terraform
+alias t='terraform'
+alias ta='terraform apply'
+alias td='terraform destroy'
+alias tp='terraform plan'
+alias ts='terraform show'
+
+
+# vagrant
+alias v='vagrant'
+alias vh='vagrant halt'
+alias vp='vagrant provision'
+alias vr='vagrant reload'
+alias vs='vagrant status'
+alias vsh='vagrant ssh'
+alias vu='vagrant up'

@@ -1,0 +1,2 @@
+autocmd BufNewFile,BufRead COMMIT_EDITMSG setlocal spell textwidth=72
+autocmd BufNewFile,BufRead *.md setlocal spell textwidth=80
