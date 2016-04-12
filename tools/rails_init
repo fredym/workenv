@@ -1,0 +1,12 @@
+#!/bin/bash
+set -e
+
+appname=$1
+rails="docker run --rm -v $(pwd):/opt/workdir -w /opt/workdir fredym/rails rails"
+bundle="docker run --rm -v $(pwd)/$appname:/opt/workdir -w /opt/workdir fredym/rails bundle"
+
+$rails new $appname --skip-bundle
+sed -e "s|# gem 'therubyracer'|gem 'therubyracer'|" -i "" $appname/Gemfile
+$bundle install --local
+
+mv $appname/README.rdoc $appname/README.md
