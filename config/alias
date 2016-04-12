@@ -54,12 +54,10 @@ alias js='jekyll serve'
 
 
 # rails
-alias bundle='docker run --rm -v $(pwd):/opt/app -w /opt/app fredym/rails bundle'
-alias bundle_install='docker run --rm -v $(pwd):/opt/app -w /opt/app fredym/rails bundle install --local'
-alias rails='docker run --rm -v $(pwd):/opt/app -w /opt/app fredym/rails rails'
-alias rails_new='rails new --skip-bundle'
-alias rails_server='docker run --rm -v $(pwd):/opt/app -w /opt/app -p 80:3000 fredym/rails rails server -b 0.0.0.0'
-alias rake='docker run --rm -v $(pwd):/opt/app -w /opt/app fredym/rails rake'
+alias bundle='docker run --rm -v $(pwd):/opt/workdir -w /opt/workdir fredym/rails bundle'
+alias rails='docker run --rm -v $(pwd):/opt/workdir -w /opt/workdir fredym/rails rails'
+alias rserver='docker run --rm -v $(pwd):/opt/workdir -w /opt/workdir -p 80:3000 fredym/rails rails server -b 0.0.0.0'
+alias rake='docker run --rm -v $(pwd):/opt/workdir -w /opt/workdir fredym/rails rake'
 
 
 # terraform
