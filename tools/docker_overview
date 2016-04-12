@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# source aliases
-. ~/.alias
-
-
 title()
 {
   b=$(tput bold)
