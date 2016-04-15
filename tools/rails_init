@@ -6,7 +6,14 @@ rails="docker run --rm -v $(pwd):/opt/workdir -w /opt/workdir fredym/rails rails
 bundle="docker run --rm -v $(pwd)/$appname:/opt/workdir -w /opt/workdir fredym/rails bundle"
 
 $rails new $appname --skip-bundle
+
+# Adjust the Gemfile
 sed -e "s|# gem 'therubyracer'|gem 'therubyracer'|" -i "" $appname/Gemfile
+sed -e '16i\
+# Use HAML for templates\
+gem '\''haml-rails'\''\
+' -i "" $appname/Gemfile
+
 $bundle install --local
 
 mv $appname/README.rdoc $appname/README.md
