@@ -61,6 +61,7 @@ fi
 log "Installing brew formulae..."
 brew install --force-bottle \
   aircrack-ng \
+  awscli \
   bash-completion \
   docker \
   docker-compose \
