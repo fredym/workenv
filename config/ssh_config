@@ -1,3 +1,7 @@
 Host incytde.gitlab.com
   HostName gitlab.com
   IdentityFile ~/.ssh/incytde
+
+Host sic-alianza.munoz.im
+  IdentityFile ~/.ssh/infra@infrazeroone.pem
+  User ec2-user
