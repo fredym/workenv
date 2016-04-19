@@ -12,6 +12,13 @@ sed -e "s|# gem 'therubyracer'|gem 'therubyracer'|" -i "" $appname/Gemfile
 sed -e '16i\
 # Use HAML for templates\
 gem '\''haml-rails'\''\
+# Use Bootstrap for resposive layout\
+gem '\''bootstrap-sass'\''\
+# Use Font Awesome and ionicons for iconography\
+gem '\''font-awesome-rails'\''\
+gem '\''font-ionicons-rails'\''\
+# Use FastClick to make following links in mobile browsers faster\
+gem '\''fastclick-rails'\''\
 ' -i "" $appname/Gemfile
 
 $bundle install --local
