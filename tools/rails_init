@@ -19,6 +19,8 @@ gem '\''font-awesome-rails'\''\
 gem '\''font-ionicons-rails'\''\
 # Use FastClick to make following links in mobile browsers faster\
 gem '\''fastclick-rails'\''\
+# Use jQuery DataTables to display tabular data\
+gem '\''jquery-datatables-rails'\''\
 ' -i "" $appname/Gemfile
 
 $bundle install --local
