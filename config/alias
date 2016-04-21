@@ -57,8 +57,8 @@ alias js='jekyll serve'
 
 
 # rails
-rails_command='docker run -v $(pwd):/opt/workdir -w /opt/workdir -rm -it fredym/rails'
-rails_daemon='docker run  -v $(pwd):/opt/workdir -w /opt/workdir -d --name $(basename $(pwd)) -p 80:3000 fredym/rails'
+rails_command='docker run -v $(pwd):/opt/workdir -w /opt/workdir -it --rm fredym/rails'
+rails_daemon='docker  run -v $(pwd):/opt/workdir -w /opt/workdir -d -p 80:3000 --name $(basename $(pwd)) fredym/rails'
 alias bundle="$rails_command bundle"
 alias rails="$rails_command rails"
 alias railsg="$rails_command rails generate"
