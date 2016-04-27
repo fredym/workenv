@@ -24,6 +24,8 @@ gem '\''fastclick-rails'\''\
 gem '\''jquery-datatables-rails'\''\
 # Use Select2 for smarter select boxes\
 gem '\''select2-rails'\''\
+# Use bootstrap-datepicker for date input\
+gem '\''bootstrap-datepicker-rails'\''\
 ' -i "" $appname/Gemfile
 
 $bundle install --local
