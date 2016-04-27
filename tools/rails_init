@@ -10,6 +10,7 @@ $rails new $appname --skip-bundle
 # Adjust the Gemfile
 sed -e "s|# gem 'therubyracer'|gem 'therubyracer'|" -i "" $appname/Gemfile
 sed -e '16i\
+\
 # Use HAML for templates\
 gem '\''haml-rails'\''\
 # Use Bootstrap for resposive layout\
@@ -21,6 +22,8 @@ gem '\''font-ionicons-rails'\''\
 gem '\''fastclick-rails'\''\
 # Use jQuery DataTables to display tabular data\
 gem '\''jquery-datatables-rails'\''\
+# Use Select2 for smarter select boxes\
+gem '\''select2-rails'\''\
 ' -i "" $appname/Gemfile
 
 $bundle install --local
