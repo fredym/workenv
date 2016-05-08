@@ -13,7 +13,6 @@ title()
 
 title "HOSTS:"
 docker-machine ls
-ls -lh ~/.docker/machine/machines/default/disk.vmdk | awk '{ print $5 }'
 
 title "IMAGES:"
 docker images
