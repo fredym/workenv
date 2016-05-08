@@ -63,8 +63,6 @@ brew install --force-bottle \
   aircrack-ng \
   awscli \
   bash-completion \
-  docker \
-  docker-compose \
   docker-machine \
   git \
   gnupg \
