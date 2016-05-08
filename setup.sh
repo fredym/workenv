@@ -63,7 +63,6 @@ brew install --force-bottle \
   aircrack-ng \
   awscli \
   bash-completion \
-  docker-machine \
   git \
   gnupg \
   lynx \
