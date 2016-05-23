@@ -20,5 +20,8 @@ docker images
 title "VOLUMES:"
 docker volume ls
 
+title "NETWORKS:"
+docker network ls
+
 title "CONTAINERS:"
 docker ps -a
