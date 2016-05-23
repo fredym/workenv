@@ -9,3 +9,4 @@ Host sic-alianza.munoz.im
 Host degrif_test
   HostName 192.3.88.214
   User root
+  IdentityFile ~/.ssh/degrif
