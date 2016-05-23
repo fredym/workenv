@@ -5,3 +5,7 @@ Host incytde.gitlab.com
 Host sic-alianza.munoz.im
   IdentityFile ~/.ssh/infra@infrazeroone.pem
   User ec2-user
+
+Host degrif_test
+  HostName 192.3.88.214
+  User root
