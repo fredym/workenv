@@ -26,6 +26,8 @@ gem '\''jquery-datatables-rails'\''\
 gem '\''select2-rails'\''\
 # Use bootstrap-datepicker for date input\
 gem '\''bootstrap-datepicker-rails'\''\
+# Use jquery-ui to improve user interface\
+gem '\''jquery-ui-rails'\''\
 ' -i "" $appname/Gemfile
 
 $bundle install --local
