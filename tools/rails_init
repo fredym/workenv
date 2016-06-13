@@ -62,6 +62,22 @@ tmp
 EOL
 
 
+# Customize application.js
+cat > $appname/app/assets/javascripts/application.js <<EOL
+//= require jquery2
+//= require jquery_ujs
+//= require turbolinks
+//= require bootstrap
+//= require fastclick
+//= require dataTables/jquery.dataTables
+//= require select2
+//= require select2_locale_es
+//= require bootstrap-datepicker/core
+//= require bootstrap-datepicker/locales/bootstrap-datepicker.es.js
+//= require_tree .
+EOL
+
+
 # Customize application.css and convert into SCSS
 rm $appname/app/assets/stylesheets/application.css
 cat > $appname/app/assets/stylesheets/application.scss <<EOL
