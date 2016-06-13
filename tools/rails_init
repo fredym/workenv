@@ -60,3 +60,16 @@ db/data
 log/*
 tmp
 EOL
+
+
+# Customize application.css and convert into SCSS
+rm $appname/app/assets/stylesheets/application.css
+cat > $appname/app/assets/stylesheets/application.scss <<EOL
+@import "bootstrap";
+@import "bootstrap-sprockets";
+@import "font-awesome";
+@import "ionicons";
+@import "dataTables/jquery.dataTables";
+@import "select2";
+@import "bootstrap-datepicker";
+EOL
