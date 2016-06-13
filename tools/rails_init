@@ -95,3 +95,7 @@ cat > $appname/config/routes.rb <<EOL
 Rails.application.routes.draw do
 end
 EOL
+
+
+# Clean seeds.rb
+cat /dev/null > $appname/db/seeds.rb
