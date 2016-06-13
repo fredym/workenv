@@ -5,7 +5,10 @@ appname=$1
 rails="docker run --rm -v $(pwd):/opt/workdir -w /opt/workdir fredym/rails rails"
 bundle="docker run --rm -v $(pwd)/$appname:/opt/workdir -w /opt/workdir fredym/rails bundle"
 
+
+# Create a new rails application
 $rails new $appname --skip-bundle
+
 
 # Adjust the Gemfile
 sed -e "s|# gem 'therubyracer'|gem 'therubyracer'|" -i "" $appname/Gemfile
@@ -32,4 +35,6 @@ gem '\''jquery-ui-rails'\''\
 
 $bundle install --local
 
+
+# Make the README a Markdown file
 mv $appname/README.rdoc $appname/README.md
