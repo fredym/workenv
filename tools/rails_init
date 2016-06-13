@@ -43,3 +43,19 @@ mv $appname/README.rdoc $appname/README.md
 # Move the sqlite files to db/data/
 sed -e "s|db/|db/data/|" -i "" $appname/config/database.yml
 sed -e "s|db/|db/data/|" -i "" $appname/.gitignore
+
+
+# Add Docker support
+cat > $appname/Dockerfile <<EOL
+FROM fredym/rails
+EOL
+
+cat > $appname/.dockerignore <<EOL
+.dockerignore
+.git
+.gitignore
+Dockerfile
+db/data
+log/*
+tmp
+EOL
