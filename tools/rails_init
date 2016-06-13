@@ -12,27 +12,28 @@ $rails new $appname --skip-bundle
 
 # Adjust the Gemfile
 sed -e "s|# gem 'therubyracer'|gem 'therubyracer'|" -i "" $appname/Gemfile
-sed -e '16i\
-\
-# Use HAML for templates\
-gem '\''haml-rails'\''\
-# Use Bootstrap for resposive layout\
-gem '\''bootstrap-sass'\''\
-# Use Font Awesome and ionicons for iconography\
-gem '\''font-awesome-rails'\''\
-gem '\''font-ionicons-rails'\''\
-# Use FastClick to make following links in mobile browsers faster\
-gem '\''fastclick-rails'\''\
-# Use jQuery DataTables to display tabular data\
-gem '\''jquery-datatables-rails'\''\
-# Use Select2 for smarter select boxes\
-gem '\''select2-rails'\''\
-# Use bootstrap-datepicker for date input\
-gem '\''bootstrap-datepicker-rails'\''\
-# Use jquery-ui to improve user interface\
-gem '\''jquery-ui-rails'\''\
-' -i "" $appname/Gemfile
+cat >> $appname/Gemfile <<EOL
+# Use HAML for templates
+gem 'haml-rails'
+# Use Bootstrap for resposive layout
+gem 'bootstrap-sass'
+# Use Font Awesome and ionicons for iconography
+gem 'font-awesome-rails'
+gem 'font-ionicons-rails'
+# Use FastClick to make following links in mobile browsers faster
+gem 'fastclick-rails'
+# Use jQuery DataTables to display tabular data
+gem 'jquery-datatables-rails'
+# Use Select2 for smarter select boxes
+gem 'select2-rails'
+# Use bootstrap-datepicker for date input
+gem 'bootstrap-datepicker-rails'
+# Use jquery-ui to improve user interface
+gem 'jquery-ui-rails'
+EOL
 
+
+# Update Gemfile.lock
 $bundle install --local
 
 
