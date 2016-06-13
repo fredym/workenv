@@ -88,3 +88,10 @@ cat > $appname/app/views/layouts/application.html.haml <<EOL
     = yield
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
 EOL
+
+
+# Clean routes.rb
+cat > $appname/config/routes.rb <<EOL
+Rails.application.routes.draw do
+end
+EOL
