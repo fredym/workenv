@@ -38,3 +38,8 @@ $bundle install --local
 
 # Make the README a Markdown file
 mv $appname/README.rdoc $appname/README.md
+
+
+# Move the sqlite files to db/data/
+sed -e "s|db/|db/data/|" -i "" $appname/config/database.yml
+sed -e "s|db/|db/data/|" -i "" $appname/.gitignore
