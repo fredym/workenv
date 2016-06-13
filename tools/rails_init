@@ -73,3 +73,18 @@ cat > $appname/app/assets/stylesheets/application.scss <<EOL
 @import "select2";
 @import "bootstrap-datepicker";
 EOL
+
+
+# Convert application.html.erb into HAML
+rm $appname/app/views/layouts/application.html.erb
+cat > $appname/app/views/layouts/application.html.haml <<EOL
+!!!
+%html
+  %head
+    = csrf_meta_tags
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    %title= (@page_title or 'Page Title')
+  %body
+    = yield
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+EOL
