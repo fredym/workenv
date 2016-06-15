@@ -74,7 +74,6 @@ cat > $appname/app/assets/javascripts/application.js <<EOL
 //= require select2_locale_es
 //= require bootstrap-datepicker/core
 //= require bootstrap-datepicker/locales/bootstrap-datepicker.es.js
-//= require_tree .
 EOL
 
 
