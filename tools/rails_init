@@ -30,6 +30,8 @@ gem 'select2-rails'
 gem 'bootstrap-datepicker-rails'
 # Use jquery-ui to improve user interface
 gem 'jquery-ui-rails'
+# Use bootstrap-wysihtml5 for textarea editing
+gem 'bootstrap-wysihtml5-rails'
 EOL
 
 
