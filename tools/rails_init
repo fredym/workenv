@@ -77,6 +77,8 @@ cat > $appname/app/assets/javascripts/application.js <<EOL
 //= require bootstrap-datepicker/core
 //= require bootstrap-datepicker/locales/bootstrap-datepicker.es.js
 //= require jquery-ui
+//= require bootstrap-wysihtml5
+//= require bootstrap-wysihtml5/locales/es-ES
 EOL
 
 
@@ -91,6 +93,7 @@ cat > $appname/app/assets/stylesheets/application.scss <<EOL
 @import "select2";
 @import "bootstrap-datepicker";
 @import "jquery-ui";
+@import "bootstrap-wysihtml5/bootstrap3-wysihtml5";
 EOL
 
 
