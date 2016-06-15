@@ -74,6 +74,7 @@ cat > $appname/app/assets/javascripts/application.js <<EOL
 //= require select2_locale_es
 //= require bootstrap-datepicker/core
 //= require bootstrap-datepicker/locales/bootstrap-datepicker.es.js
+//= require jquery-ui
 EOL
 
 
@@ -87,6 +88,7 @@ cat > $appname/app/assets/stylesheets/application.scss <<EOL
 @import "dataTables/jquery.dataTables";
 @import "select2";
 @import "bootstrap-datepicker";
+@import "jquery-ui";
 EOL
 
 
