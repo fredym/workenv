@@ -34,6 +34,8 @@ gem 'jquery-ui-rails'
 gem 'bootstrap-wysihtml5-rails'
 # Use Moment.js for date manipulation in the browser
 gem 'momentjs-rails'
+# Use Date Range Picker for date range input
+gem 'bootstrap-daterangepicker-rails'
 EOL
 
 
@@ -83,6 +85,7 @@ cat > $appname/app/assets/javascripts/application.js <<EOL
 //= require bootstrap-wysihtml5/locales/es-ES
 //= require moment
 //= require moment/es.js
+//= require daterangepicker
 EOL
 
 
@@ -98,6 +101,7 @@ cat > $appname/app/assets/stylesheets/application.scss <<EOL
 @import "bootstrap-datepicker";
 @import "jquery-ui";
 @import "bootstrap-wysihtml5/bootstrap3-wysihtml5";
+@import "daterangepicker-bs3";
 EOL
 
 
