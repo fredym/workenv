@@ -32,6 +32,8 @@ gem 'bootstrap-datepicker-rails'
 gem 'jquery-ui-rails'
 # Use bootstrap-wysihtml5 for textarea editing
 gem 'bootstrap-wysihtml5-rails'
+# Use Moment.js for date manipulation in the browser
+gem 'momentjs-rails'
 EOL
 
 
@@ -79,6 +81,8 @@ cat > $appname/app/assets/javascripts/application.js <<EOL
 //= require jquery-ui
 //= require bootstrap-wysihtml5
 //= require bootstrap-wysihtml5/locales/es-ES
+//= require moment
+//= require moment/es.js
 EOL
 
 
