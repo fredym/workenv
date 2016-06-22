@@ -47,6 +47,7 @@ alias gs='git status -sb'
 alias gsl='git status -sb | grep -v "\.\."'
 alias gsr='git remote show origin'
 alias gsync='go master; gull; go develop; gull;'
+alias gt='git tag'
 alias gull='git pull'
 alias gush='git push'
 
