@@ -98,9 +98,9 @@ brew cask install \
   spectacle \
   teamviewer \
   ticktick \
-  trello-x \
   vagrant \
   virtualbox \
+  xccello \
 
 
 # Cleanup brew cache
