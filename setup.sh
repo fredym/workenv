@@ -128,7 +128,7 @@ Rscript install_r_packages.R
 # Symlink and download useful tools and files
 log "Symlinking useful tools and files..."
 ln -sf /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/local/bin/airport
-ln -sf iTunes/iTunes\ Media/Automatically\ Add\ to\ iTunes.localized ~/Music/autoadd
+ln -sfh iTunes/iTunes\ Media/Automatically\ Add\ to\ iTunes.localized ~/Music/autoadd
 curl -fsSL https://raw.githubusercontent.com/docker/docker/master/contrib/completion/bash/docker > /usr/local/etc/bash_completion.d/docker
 
 
