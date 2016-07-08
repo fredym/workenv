@@ -7,6 +7,6 @@ Host testbox.munoz.im
   User ec2-user
 
 Host degrif_test
-  HostName 192.3.88.214
+  HostName 207.126.164.165
   User root
   IdentityFile ~/.ssh/degrif
