@@ -61,16 +61,6 @@ alias jb='jekyll build'
 alias js='jekyll serve'
 
 
-# rails
-rails_command='docker run -v $(pwd):/opt/workdir -w /opt/workdir -it --rm fredym/rails'
-rails_daemon='docker  run -v $(pwd):/opt/workdir -w /opt/workdir -d -p 80:3000 --name $(basename $(pwd)) fredym/rails'
-alias bundle="$rails_command bundle"
-alias rails="$rails_command rails"
-alias railsg="$rails_command rails generate"
-alias railss="$rails_daemon rails server -b 0.0.0.0"
-alias rake="$rails_command rake"
-
-
 # terraform
 alias t='terraform'
 alias ta='terraform apply'
