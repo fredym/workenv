@@ -69,26 +69,7 @@ brew upgrade;
 
 # Install brew casks
 log "Installing brew casks..."
-brew cask install \
-  android-file-transfer \
-  atom \
-  chitchat \
-  diffmerge \
-  dropbox \
-  evernote \
-  gimp \
-  keka \
-  progressive-downloader \
-  rstudio \
-  sequel-pro \
-  skype \
-  slack \
-  spectacle \
-  teamviewer \
-  ticktick \
-  vagrant \
-  virtualbox \
-  xccello \
+cat brew_casks | xargs brew cask install
 
 
 # Cleanup brew cache
