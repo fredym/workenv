@@ -1,0 +1,14 @@
+packages <- c(
+   "dplyr"
+  ,"httr"
+)
+
+repos   <- "https://cran.rstudio.com"
+type    <- "mac.binary.mavericks"
+install <- function(package_name) {
+  if (!suppressMessages(require(package_name, character.only = TRUE))) {
+    install.packages(package_name, repos=repos, type=type)
+  }
+}
+
+suppressWarnings(invisible(lapply(packages, install)))

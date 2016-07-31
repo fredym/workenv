@@ -85,7 +85,7 @@ cat atom_packages | xargs apm install
 
 # Install R packages
 log "Installing R packages..."
-Rscript install_r_packages.R
+Rscript r_packages
 
 
 # Symlink and download useful tools and files
