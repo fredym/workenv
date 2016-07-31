@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /bin/bash
 
 # Script parameters
 NEW_HOSTNAME=aleph
@@ -59,7 +59,7 @@ fi
 
 # Install brew formulae
 log "Installing brew formulae..."
-cat brew_formulae | xargs brew install --force-bottle
+cat setup.d/brew_formulae | xargs brew install --force-bottle
 
 
 # Update outdated brew formulae
@@ -69,7 +69,7 @@ brew upgrade;
 
 # Install brew casks
 log "Installing brew casks..."
-cat brew_casks | xargs brew cask install
+cat setup.d/brew_casks | xargs brew cask install
 
 
 # Cleanup brew cache
@@ -80,12 +80,12 @@ brew cask cleanup;
 
 # Install atom packages
 log "Installing atom packages..."
-cat atom_packages | xargs apm install
+cat setup.d/atom_packages | xargs apm install
 
 
 # Install R packages
 log "Installing R packages..."
-Rscript r_packages
+Rscript setup.d/r_packages
 
 
 # Symlink and download useful tools and files

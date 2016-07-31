@@ -1,0 +1,84 @@
+#!/bin/bash
+set -e
+
+appdir=$1
+
+
+
+# Download latest version of AdminLTE
+# https://almsaeedstudio.com/download/AdminLTE-master
+# Unzip to cache location
+
+
+
+# Install AdminLTE.css and skin-abc.css into vendor/assets/stylesheets
+# Reference them at application.scss
+# @import "AdminLTE";
+# @import "skin-abc";
+
+
+
+# Install AdminLTE.js (app.js) and dashboard.js
+# Reference at application.js
+# //= require AdminLTE
+# //= require dashboard
+
+
+
+
+# Install images into app/assets/images
+# cp ~/Downloads/_w/AdminLTE-2.3.3/dist/img/user2-160x160.jpg app/assets/images/
+
+
+
+# Append this to %head in application.html.haml
+# %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+# %meta{:charset => "utf-8"}/
+# %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+# / Tell the browser to be responsive to screen width
+# %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no", :name => "viewport"}/
+
+
+
+# Replace %body with this:
+# WARN: this must honor skin-abc.css (the selected skin)
+# %body.hold-transition.skin-blue.sidebar-mini
+
+
+
+# Replace "= yield" with this
+#   .wrapper
+#     = render 'shared/header'
+#     = render 'shared/menu'
+#     = render 'shared/content'
+#     = render 'shared/footer'
+#     = render 'shared/sidebar'
+
+
+
+# Look for a place for "= yield"
+
+
+
+# Create app/views/shaded dir with the following files
+# _content.html.haml
+# _footer.html.haml
+# _header.html.haml
+# _menu.html.haml
+# _sidebar.html.haml
+
+
+
+# Generate dashboard controller with index action
+# railsg controller dashboard index --skip-assets
+# Set root route to dashboard#index
+# Replace "get 'dashboard/index'" with "root 'dashboard#index'"
+
+
+
+# Install jQuery Knob
+# ** Try this: https://rails-assets.org/#/components/jquery-knob **
+# Download from https://github.com/aterrien/jQuery-Knob/releases/latest
+# cp ~/Downloads/jQuery-Knob-1.2.13/js/jquery.knob.js vendor/assets/javascripts/
+# Reference at application.js
+# //= require jquery.knob
