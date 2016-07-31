@@ -59,19 +59,7 @@ fi
 
 # Install brew formulae
 log "Installing brew formulae..."
-brew install --force-bottle \
-  aircrack-ng \
-  awscli \
-  bash-completion \
-  git \
-  gnupg \
-  lynx \
-  mdbtools \
-  python \
-  homebrew/science/r \
-  ruby \
-  tree \
-  watch \
+cat brew_formulae | xargs brew install --force-bottle
 
 
 # Update outdated brew formulae
