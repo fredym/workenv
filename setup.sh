@@ -80,13 +80,7 @@ brew cask cleanup;
 
 # Install atom packages
 log "Installing atom packages..."
-apm install \
-  autoclose-html \
-  language-docker \
-  language-haml \
-  language-r \
-  last-cursor-position \
-  sublime-style-column-selection \
+cat atom_packages | xargs apm install
 
 
 # Install R packages
