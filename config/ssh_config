@@ -5,8 +5,3 @@ Host incytde.gitlab.com
 Host testbox.munoz.im
   IdentityFile ~/.ssh/infra@infrazeroone.pem
   User ec2-user
-
-Host degrif_test
-  HostName 207.126.164.165
-  User root
-  IdentityFile ~/.ssh/degrif
