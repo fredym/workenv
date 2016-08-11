@@ -2,7 +2,6 @@
 
 
 # bash
-alias bk='rsync -av --delete'
 alias cl='clear'
 alias df='df -h'
 alias du='du -hd1'
