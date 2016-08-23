@@ -7,7 +7,6 @@ title()
 
   echo
   echo "$b$1$n"
-  echo
 }
 
 
@@ -18,7 +17,7 @@ title "DISK USAGE:"
 du -hd0 ~/Library/Containers/com.docker.docker | awk '{ print $1 }'
 
 title "IMAGES:"
-docker images
+docker images --format "[{{.Size}}] {{.Repository}}:{{.Tag}}"
 
 title "VOLUMES:"
 docker volume ls
@@ -26,5 +25,11 @@ docker volume ls
 title "NETWORKS:"
 docker network ls
 
-title "CONTAINERS:"
-docker ps -a
+title "CONTAINERS [IMAGES]:"
+docker ps -a --no-trunc --format "[{{.Names}}] {{.Image}}"
+
+title "CONTAINERS [STATUS]:"
+docker ps -a --no-trunc --format "[{{.Names}}] {{.Command}} {{.Status}}"
+
+title "CONTAINERS [MOUNTS]:"
+docker ps -a --no-trunc --format "[{{.Names}}] {{.Mounts}}"
