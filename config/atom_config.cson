@@ -15,5 +15,7 @@
   "exception-reporting":
     userId: "0f9c4bca-c1e4-c885-1374-c2dd26290ade"
   "spell-check": {}
+  tabs:
+    addNewTabsAtEnd: true
   welcome:
     showOnStartup: false
