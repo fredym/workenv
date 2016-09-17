@@ -1,6 +1,5 @@
 "*":
   core:
-    automaticallyUpdate: false
     disabledPackages: [
       "spell-check"
     ]
