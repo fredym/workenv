@@ -3,10 +3,13 @@ awscli
 bash-completion
 git
 gnupg
+heroku
 lynx
 mdbtools
+postgresql
 python
 homebrew/science/r
-ruby
+rbenv
+ruby-build
 tree
 watch
