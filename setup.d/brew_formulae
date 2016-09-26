@@ -8,8 +8,9 @@ lynx
 mdbtools
 postgresql
 python
-homebrew/science/r
 rbenv
 ruby-build
 tree
 watch
+homebrew/completions/vagrant-completion
+homebrew/science/r
