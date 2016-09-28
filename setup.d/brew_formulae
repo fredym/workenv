@@ -6,6 +6,7 @@ gnupg
 heroku
 lynx
 mdbtools
+mysql
 postgresql
 python
 rbenv
