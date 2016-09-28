@@ -1,6 +1,6 @@
 #!/bin/bash
 rsync -avz --delete \
-  --exclude-from ~/own/workenv/tools/bk-exclude \
-  --include-from ~/own/workenv/tools/bk-include \
+  --exclude-from ~/own/workenv/tools/bk.d/bk-exclude \
+  --include-from ~/own/workenv/tools/bk.d/bk-include \
   --exclude '*' \
   . Dropbox/aleph
