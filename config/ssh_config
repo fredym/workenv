@@ -3,15 +3,16 @@ Host incytde.gitlab.com
   IdentityFile ~/.ssh/incytde
 
 Host testbox.munoz.im
+  HostName 54.174.114.211
   IdentityFile ~/.ssh/infra@infrazeroone.pem
   User ec2-user
 
 Host genun
   HostName 207.126.164.165
-  User root
   IdentityFile ~/.ssh/genun
+  User root
 
 Host test_intra_vrip
-  IdentityFile ~/.ssh/infra@infrazeroone.pem
   HostName 54.243.10.99
+  IdentityFile ~/.ssh/infra@infrazeroone.pem
   User ubuntu
