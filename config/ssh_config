@@ -10,3 +10,8 @@ Host genun
   HostName 207.126.164.165
   User root
   IdentityFile ~/.ssh/genun
+
+Host test_intra_vrip
+  IdentityFile ~/.ssh/infra@infrazeroone.pem
+  HostName 54.243.10.99
+  User ubuntu
