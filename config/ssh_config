@@ -16,3 +16,8 @@ Host test_intra_vrip
   HostName 54.243.10.99
   IdentityFile ~/.ssh/infra@infrazeroone.pem
   User ubuntu
+
+Host gitlab.awadserver.com
+  IdentityFile ~/.ssh/aw
+  StrictHostKeyChecking no
+  UserKnownHostsFile /dev/null
