@@ -28,6 +28,7 @@ mkdir own; cd own;
 
 # Clone the workenv repo
 git clone https://github.com/fredym/workenv.git
+git -C workenv remote set-url origin git@github.com:fredym/workenv.git
 
 
 # Set hostname
