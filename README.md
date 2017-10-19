@@ -7,17 +7,20 @@ My computing environment setup expressed in code.
 Installation
 ------------
 
-Clone this repo and run `setup.sh`. This will install a bunch of software using
-[brew]. Then the configuration files of some of these tools will be overwritten.
+Execute the bootstrap script from `$HOME` directory:
 
-_WARNING: `setup.sh` will set the computer name to `aleph`. You need to edit
-`setup.sh` and specify yours. This is being tracked on #9._
+`bash -c "$(curl -fsSL https://raw.githubusercontent.com/fredym/workenv/master/bootstrap)"`
 
-    $ cd
-    $ git clone https://github.com/fredym/workenv.git
-    $ cd workenv
-    $ chmod +r setup.sh
-    $ ./setup.sh
+This will prepare the computer to continue installing software and configuration:
+
+* Install XCode command line tools
+* Clone the this repo
+* Set a new computer name (I don't like `Fredy's-MacBook-Pro.local`)
+
+Changing the computer name requires a reboot. After rebooting you can continue
+the setup process by executing:
+
+`$HOME/own/workenv/setup`
 
 
 
