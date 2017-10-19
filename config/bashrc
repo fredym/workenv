@@ -22,7 +22,7 @@ fi
 
 # prompt
 export GIT_PS1_SHOWDIRTYSTATE=1
-export PS1="\[\033[01;34m\]$(hostname):\w\$(__git_ps1)$ \[\033[00m\]"
+export PS1="\[\033[01;34m\]$(hostname):\w\$(__git_ps1)\n$ \[\033[00m\]"
 
 
 # tools
