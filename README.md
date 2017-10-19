@@ -20,7 +20,8 @@ This will prepare the computer to continue installing software and configuration
 Changing the computer name requires a reboot. After rebooting you can continue
 the setup process by executing:
 
-`$HOME/own/workenv/setup`
+    cd $HOME/own/workenv
+    ./setup
 
 
 
