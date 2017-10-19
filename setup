@@ -27,7 +27,7 @@ fi
 
 # Install brew formulae
 log "Installing brew formulae..."
-cat setup.d/brew_formulae | xargs brew install --force-bottle
+xargs brew install --force-bottle < setup.d/brew_formulae
 
 
 # Update outdated brew formulae
@@ -37,7 +37,7 @@ brew upgrade;
 
 # Install brew casks
 log "Installing brew casks..."
-cat setup.d/brew_casks | xargs brew cask install
+xargs brew cask install < setup.d/brew_casks
 
 
 # Cleanup brew cache
@@ -48,7 +48,7 @@ brew cask cleanup;
 
 # Install atom packages
 log "Installing atom packages..."
-cat setup.d/atom_packages | xargs apm install
+xargs apm install < setup.d/atom_packages
 
 
 # Install R packages
