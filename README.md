@@ -28,16 +28,17 @@ config
 ------
 
 The most relevant configuration files are stored in this directory and symlinked
-from `$HOME` by `setup.sh`.
+from `$HOME` by `setup`.
 
 
 
 tools
 -----
 
-There are some simple tasks I do very often but for which there is no command
-line tool yet available so I just create one and add it here. These tools are
-designed for **Mac OS X**.
+There are some simple tasks I often run but for which there is no command line
+tool yet available so I just create one and add it here. These tools are
+designed and built to run on **macOS**, although I've managed to run them on
+**Windows** and **Linux** with a few tweaks.
 
 
 
@@ -49,6 +50,8 @@ Displays on screen a report of the current status of:
 - Default Docker machine disk size
 - Docker images
 - Docker containers
+
+**Depends on:** [docker]
 
 
 
@@ -89,6 +92,8 @@ Displays on screen a report of the current git repository:
 - Stash status
 - Remote origin status
 
+**Depends on:** [git]
+
 
 
 ### pass
@@ -110,3 +115,5 @@ that I don't need a secure storage to keep my passwords safe.
 [lynx]: http://lynx.invisible-island.net/
 [perl]: https://www.perl.org
 [Simon Sheppard]: https://github.com/salsifis/ss64-password-generators
+[docker]: https://docs.docker.com
+[git]: https://git-scm.com
