@@ -1,6 +1,7 @@
 aircrack-ng
 awscli
 bash-completion
+docker-completion
 git
 gnupg
 heroku
