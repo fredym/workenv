@@ -43,10 +43,11 @@ if [ "$HOSTNAME" != "$NEW_HOSTNAME" ]; then
 
   # Reboot required to apply system config changes
   log "A system reboot is required"
-  log "Execute own/workenv/setup to continue after reboot"
+  log "Execute setup from own/workenv/ to continue after reboot"
   read -p "Press RETURN to continue..."
   sudo reboot
 else
   log "Computer name is already $NEW_HOSTNAME"
-  own/workenv/setup
+  cd workenv
+  ./setup
 fi
