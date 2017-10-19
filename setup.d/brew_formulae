@@ -10,9 +10,9 @@ mdbtools
 mysql
 postgresql
 python
+r
 rbenv
 ruby-build
 tree
+vagrant-completion
 watch
-homebrew/completions/vagrant-completion
-homebrew/science/r
