@@ -4,6 +4,7 @@ bash-completion
 git
 gnupg
 heroku
+jq
 lynx
 mdbtools
 mysql
