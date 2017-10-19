@@ -1,9 +1,5 @@
 #! /bin/bash
 
-# Script parameters
-NEW_HOSTNAME=aleph
-
-
 # Stop script if Ctrl+C is hit
 trap exit SIGHUP SIGINT SIGTERM
 
@@ -15,34 +11,6 @@ log () {
 
   echo "$b$1$n"
 }
-
-
-# Set hostname
-if [ "$HOSTNAME" != "$NEW_HOSTNAME" ]; then
-  log "Changing computer name to $NEW_HOSTNAME"
-
-  sudo scutil --set HostName $NEW_HOSTNAME
-  sudo scutil --set LocalHostName $NEW_HOSTNAME
-  sudo scutil --set ComputerName $NEW_HOSTNAME
-
-  # Reboot required to apply system config changes
-  log "A system reboot is required"
-  read -p "Press RETURN to continue..."
-  sudo reboot
-else
-  log "Computer name already is $NEW_HOSTNAME"
-fi
-
-
-# Install XCode command line tools
-xcode-select --install &>/dev/null
-
-if [ $? -eq 0 ]; then
-  log "XCode command line tools will be installed in a separate window"
-  read -p "Press RETURN when the installation is complete..."
-else
-  log "XCode command line tools already installed"
-fi
 
 
 # Install brew
