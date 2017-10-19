@@ -5,7 +5,7 @@ packages <- c(
 )
 
 repos   <- "https://cran.rstudio.com"
-type    <- "mac.binary.mavericks"
+type    <- "mac.binary.el-capitan"
 install <- function(package_name) {
   if (!suppressMessages(require(package_name, character.only = TRUE))) {
     install.packages(package_name, repos=repos, type=type)
