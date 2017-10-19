@@ -87,7 +87,6 @@ if ! [ -e .ssh ]; then
   chmod 700 .ssh
 fi
 ln -sf ../.dot/ssh_config .ssh/config
-ln -sf ../.dot/ssh_known_hosts .ssh/known_hosts
 chmod 600 .ssh/*
 
 
