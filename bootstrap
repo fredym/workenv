@@ -1,3 +1,6 @@
+#!/bin/sh
+
+
 # Stop script if Ctrl+C is hit
 trap exit SIGHUP SIGINT SIGTERM
 
