@@ -52,11 +52,6 @@ log "Installing atom packages..."
 xargs apm install < setup.d/atom_packages
 
 
-# Install R packages
-log "Installing R packages..."
-Rscript setup.d/r_packages
-
-
 # Symlink and download useful tools and files
 log "Symlinking useful tools and files..."
 ln -sf /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/local/bin/airport
