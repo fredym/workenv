@@ -90,7 +90,7 @@ cp .dot/com.apple.Terminal.plist Library/Preferences/
 
 
 # Overwrite some macOS environment default settings
-defaults write com.apple.screencapture location ~/Documents
+defaults write com.apple.screencapture location ~/Downloads
 
 
 # List brew casks to cleanup manually
