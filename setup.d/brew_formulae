@@ -3,7 +3,6 @@ awscli
 bash-completion
 docker-completion
 git
-gnupg
 heroku
 jq
 lynx
