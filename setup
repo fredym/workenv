@@ -81,15 +81,6 @@ ln -sf .dot/vimrc .vimrc
 ln -sf ../.dot/atom_config.cson .atom/config.cson
 
 
-# SSH configuration
-if ! [ -e .ssh ]; then
-  mkdir .ssh
-  chmod 700 .ssh
-fi
-ln -sf ../.dot/ssh_config .ssh/config
-chmod 600 .ssh/*
-
-
 # Overwrite config files not suitable to be symlinked
 cp .dot/com.apple.Terminal.plist Library/Preferences/
 
