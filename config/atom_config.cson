@@ -1,10 +1,6 @@
 "*":
   core:
     telemetryConsent: "limited"
-    themes: [
-      "one-light-ui"
-      "atom-light-syntax"
-    ]
   editor:
     fontFamily: "Menlo"
     invisibles: {}
