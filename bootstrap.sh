@@ -50,6 +50,4 @@ if [ "$HOSTNAME" != "$NEW_HOSTNAME" ]; then
   sudo reboot
 else
   log "Hostname is already $NEW_HOSTNAME"
-  cd workenv
-  ./setup
 fi
