@@ -9,7 +9,7 @@ Installation
 
 Execute the bootstrap script from `$HOME` directory:
 
-`bash <(curl -fsSL https://raw.githubusercontent.com/fredym/workenv/master/bootstrap.sh)`
+    bash <(curl -fsSL https://raw.githubusercontent.com/fredym/workenv/master/bootstrap.sh)
 
 This will prepare the computer to continue the installation of software and
 configuration files. This script will:
@@ -30,7 +30,7 @@ config
 ------
 
 The most relevant configuration files are stored in this directory and symlinked
-from `$HOME` by `setup`.
+from `$HOME` by `setup.sh`.
 
 
 
