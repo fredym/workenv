@@ -18,8 +18,8 @@ log () {
 xcode-select --install &>/dev/null
 
 if [ $? -eq 0 ]; then
-  log "XCode command line tools will be installed in a separate window"
-  read -p "Press RETURN when the installation is complete..."
+  log "Installation of XCode command line tools will start in a separate window"
+  read -p "Press RETURN after installation is complete..."
 else
   log "XCode command line tools already installed"
 fi
