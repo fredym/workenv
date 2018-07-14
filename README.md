@@ -9,19 +9,20 @@ Installation
 
 Execute the bootstrap script from `$HOME` directory:
 
-`bash -c "$(curl -fsSL https://raw.githubusercontent.com/fredym/workenv/master/bootstrap)"`
+`bash <(curl -fsSL https://raw.githubusercontent.com/fredym/workenv/master/bootstrap.sh)`
 
-This will prepare the computer to continue installing software and configuration:
+This will prepare the computer to continue the installation of software and
+configuration files. This script will:
 
-* Install XCode command line tools
-* Clone the this repo
-* Set a new computer name (I don't like `Fredy's-MacBook-Pro.local`)
+* Install XCode command line tools, if not already installed.
+* Clone this repo.
+* Set a new host name (I don't like the default `Fredy's-MacBook-Pro.local`).
 
 Changing the computer name requires a reboot. After rebooting you can continue
-the setup process by executing:
+the setup process from the `workenv` directory:
 
     cd $HOME/own/workenv
-    ./setup
+    bash setup.sh
 
 
 
