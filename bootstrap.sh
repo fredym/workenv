@@ -35,10 +35,10 @@ git -C workenv remote set-url origin git@github.com:fredym/workenv.git
 
 
 # Set hostname
-log "Current computer name is $HOSTNAME"
-read -p "Type the computer name you want to set: " NEW_HOSTNAME
+log "Current hostname is $HOSTNAME"
+read -p "Type the NEW hostname you want to set: " NEW_HOSTNAME
 if [ "$HOSTNAME" != "$NEW_HOSTNAME" ]; then
-  log "Changing computer name to $NEW_HOSTNAME"
+  log "Changing hostname to $NEW_HOSTNAME"
 
   sudo scutil --set HostName $NEW_HOSTNAME
   sudo scutil --set LocalHostName $NEW_HOSTNAME
@@ -46,11 +46,10 @@ if [ "$HOSTNAME" != "$NEW_HOSTNAME" ]; then
 
   # Reboot required to apply system config changes
   log "A system reboot is required"
-  log "Execute setup from own/workenv/ to continue after reboot"
   read -p "Press RETURN to continue..."
   sudo reboot
 else
-  log "Computer name is already $NEW_HOSTNAME"
+  log "Hostname is already $NEW_HOSTNAME"
   cd workenv
   ./setup
 fi

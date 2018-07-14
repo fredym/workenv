@@ -16,10 +16,10 @@ configuration files. This script will:
 
 * Install XCode command line tools, if not already installed.
 * Clone this repo.
-* Set a new host name (I don't like the default `Fredy's-MacBook-Pro.local`).
+* Set a new hostname (I don't like the default `Fredy's-MacBook-Pro.local`).
 
-Changing the computer name requires a reboot. After rebooting you can continue
-the setup process from the `workenv` directory:
+Changing the hostname requires a reboot. After rebooting you can continue the
+setup process from the `workenv` directory:
 
     cd $HOME/own/workenv
     bash setup.sh
