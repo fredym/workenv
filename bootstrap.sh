@@ -25,13 +25,17 @@ else
 fi
 
 
-# Create the own directory
-mkdir own; cd own;
+# Setup the workenv directory
+if [ ! -d "$HOME/own/workenv" ]; then
+  log "Setting up the workenv directory"
 
+  # Create the workenv directory
+  mkdir -p $HOME/own/workenv
 
-# Clone the workenv repo
-git clone https://github.com/fredym/workenv.git
-git -C workenv remote set-url origin git@github.com:fredym/workenv.git
+  # Clone the workenv repo
+  git clone https://github.com/fredym/workenv.git $HOME/own/workenv
+  git -C $HOME/own/workenv remote set-url origin git@github.com:fredym/workenv.git
+fi
 
 
 # Set hostname
