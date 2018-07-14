@@ -110,6 +110,20 @@ that I don't need a secure storage to keep my passwords safe.
 
 
 
+### bk
+
+A convenient way to manually backup important files into a safe place. This can
+be scheduled when needed.
+
+
+
+### kb
+
+A convenient way to manually restore important files from a safe place. I don't
+use this frequently, mostly when I'm setting up a new workstation.
+
+
+
 
 [brew]: http://brew.sh/
 [Benoit Mortgat]: http://ss64.com/pass/command-line.html
