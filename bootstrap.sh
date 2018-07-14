@@ -35,6 +35,8 @@ if [ ! -d "$HOME/own/workenv" ]; then
   # Clone the workenv repo
   git clone https://github.com/fredym/workenv.git $HOME/own/workenv
   git -C $HOME/own/workenv remote set-url origin git@github.com:fredym/workenv.git
+else
+  log "Workenv directory already setup"
 fi
 
 
@@ -53,5 +55,5 @@ if [ "$HOSTNAME" != "$NEW_HOSTNAME" ]; then
   read -p "Press RETURN to continue..."
   sudo reboot
 else
-  log "Hostname is already $NEW_HOSTNAME"
+  log "Hostname is $NEW_HOSTNAME already"
 fi
