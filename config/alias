@@ -44,6 +44,7 @@ alias gl='git log --pretty=format:"%C(auto)%h %ad | %s%d [%an]" --graph --date=s
 alias gla='gl --all'
 alias gm='git merge'
 alias go='git checkout'
+alias gob='git checkout -b'
 alias gr='git reset'
 alias grh='git reset HEAD'
 alias gs='git status -sb'
