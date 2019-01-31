@@ -3,4 +3,5 @@ language-docker
 language-haml
 language-r
 last-cursor-position
+split-diff
 sublime-style-column-selection
