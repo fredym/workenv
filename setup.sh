@@ -28,7 +28,7 @@ fi
 
 # Install brew formulae
 log "Installing brew formulae..."
-xargs brew install --force-bottle < setup.d/brew_formulae
+xargs brew install --force-bottle < $HOME/own/workenv/setup.d/brew_formulae
 
 
 # Update outdated brew formulae
@@ -38,7 +38,7 @@ brew upgrade;
 
 # Install brew casks
 log "Installing brew casks..."
-xargs brew cask install < setup.d/brew_casks
+xargs brew cask install < $HOME/own/workenv/setup.d/brew_casks
 
 
 # Cleanup brew cache
@@ -49,7 +49,7 @@ brew cask cleanup;
 
 # Install atom packages
 log "Installing atom packages..."
-xargs apm install < setup.d/atom_packages
+xargs apm install < $HOME/own/workenv/setup.d/atom_packages
 
 
 # Install package managers
@@ -68,22 +68,21 @@ log "Installing config files..."
 
 # Create symlink in homedir to config directory
 # This helps having short paths
-ln -sfh $(pwd)/config ~/.dot
+ln -sfh $HOME/own/workenv/config $HOME/.dot
 
 
 # Replace config files in homedir with symlinks to .dot config files
-cd
-ln -sf .dot/alias .alias
-ln -sf .dot/bashrc .bashrc
-ln -sf .dot/bash_profile .bash_profile
-ln -sf .dot/gitconfig .gitconfig
-ln -sf .dot/vimrc .vimrc
-ln -sf ../.dot/atom_config.cson .atom/config.cson
+ln -sf .dot/alias $HOME/.alias
+ln -sf .dot/bashrc $HOME/.bashrc
+ln -sf .dot/bash_profile $HOME/.bash_profile
+ln -sf .dot/gitconfig $HOME/.gitconfig
+ln -sf .dot/vimrc $HOME/.vimrc
+ln -sf ../.dot/atom_config.cson $HOME/.atom/config.cson
 
 
 # Overwrite config files not suitable to be symlinked
-cp .dot/com.apple.Terminal.plist Library/Preferences/
+cp $HOME/.dot/com.apple.Terminal.plist $HOME/Library/Preferences/
 
 
 # Overwrite some macOS environment default settings
-defaults write com.apple.screencapture location ~/Downloads
+defaults write com.apple.screencapture location $HOME/Downloads
