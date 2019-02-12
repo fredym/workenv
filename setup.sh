@@ -44,7 +44,6 @@ xargs brew cask install < $HOME/own/workenv/setup.d/brew_casks
 # Cleanup brew cache
 log "Cleaning up brew cache..."
 brew cleanup;
-brew cask cleanup;
 
 
 # Install atom packages
