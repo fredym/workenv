@@ -52,8 +52,8 @@ xargs apm install < $HOME/own/workenv/setup.d/atom_packages
 
 
 # Install package managers
-log "Installing package managers..."
-rscript -e 'install.packages("packrat",repos="https://cran.rstudio.com")'
+#log "Installing package managers..."
+#rscript -e 'install.packages("packrat",repos="https://cran.rstudio.com")'
 
 
 # Symlink and download useful tools and files
