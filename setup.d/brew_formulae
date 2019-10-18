@@ -12,6 +12,7 @@ postgresql
 python
 r
 rbenv
+rsync
 ruby-build
 terraform
 tree
