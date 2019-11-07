@@ -28,7 +28,7 @@ fi
 
 # Install brew formulae
 log "Installing brew formulae..."
-xargs brew install --force-bottle < $HOME/own/workenv/setup.d/brew_formulae
+grep -v '^#' $HOME/own/workenv/setup.d/brew_formulae | xargs brew install --force-bottle
 
 
 # Update outdated brew formulae
@@ -38,7 +38,7 @@ brew upgrade;
 
 # Install brew casks
 log "Installing brew casks..."
-xargs brew cask install < $HOME/own/workenv/setup.d/brew_casks
+grep -v '^#' $HOME/own/workenv/setup.d/brew_casks | xargs brew cask install
 
 
 # Cleanup brew cache
@@ -48,7 +48,7 @@ brew cleanup;
 
 # Install atom packages
 log "Installing atom packages..."
-xargs apm install < $HOME/own/workenv/setup.d/atom_packages
+grep -v '^#' $HOME/own/workenv/setup.d/atom_packages | xargs apm install
 
 
 # Install package managers
