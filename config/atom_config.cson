@@ -7,6 +7,7 @@
     ]
   editor:
     fontFamily: "Menlo"
+    fontSize: 16
     invisibles: {}
     softWrap: true
   "exception-reporting":
