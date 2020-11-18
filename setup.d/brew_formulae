@@ -1,6 +1,6 @@
-aircrack-ng
+#aircrack-ng
 awscli
-docker-completion
+#docker-completion
 git
 gpg
 #heroku
