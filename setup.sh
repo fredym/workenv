@@ -79,9 +79,5 @@ ln -sf .dot/vimrc $HOME/.vimrc
 ln -sf ../.dot/atom_config.cson $HOME/.atom/config.cson
 
 
-# Overwrite config files not suitable to be symlinked
-cp $HOME/.dot/com.apple.Terminal.plist $HOME/Library/Preferences/
-
-
 # Overwrite some macOS environment default settings
 defaults write com.apple.screencapture location $HOME/Downloads
