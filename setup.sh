@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 
 # Stop script if Ctrl+C is hit
