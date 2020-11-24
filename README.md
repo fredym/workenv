@@ -14,6 +14,7 @@ Execute the bootstrap script from `$HOME` directory:
 This will prepare the computer to continue the installation of software and
 configuration files. This script will:
 
+* Set bash as the default shell.
 * Install XCode command line tools, if not already installed.
 * Clone this repo.
 * Set a new hostname (I don't like the default `Fredy's-MacBook-Pro.local`).

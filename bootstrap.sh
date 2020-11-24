@@ -14,6 +14,11 @@ log () {
 }
 
 
+# Set bash as the default shell
+chsh -s /bin/bash
+log "Default shell set to bash"
+
+
 # Install XCode command line tools
 xcode-select --install &>/dev/null
 
