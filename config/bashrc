@@ -39,3 +39,6 @@ export PATH="$HOME/own/workenv/tools:$PATH"
 # rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 export PATH="$HOME/.rbenv/shims:$PATH"
+
+# brew
+export HOMEBREW_NO_BOTTLE_SOURCE_FALLBACK=1
