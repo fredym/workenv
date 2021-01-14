@@ -38,7 +38,7 @@ brew upgrade;
 
 # Install brew casks
 log "Installing brew casks..."
-grep -v '^#' $HOME/own/workenv/setup.d/brew_casks | xargs brew cask install
+grep -v '^#' $HOME/own/workenv/setup.d/brew_casks | xargs brew install --cask
 
 
 # Cleanup brew cache
