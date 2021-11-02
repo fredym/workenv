@@ -6,8 +6,9 @@
 
 
 # default PATH
-export PATH="/usr/local/sbin:/usr/sbin:/sbin"
-export PATH="/usr/local/bin:/usr/bin:/bin:$PATH"
+export PATH="/bin:/sbin"
+export PATH="/usr/bin:/usr/sbin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 
 # terminal title
