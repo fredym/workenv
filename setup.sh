@@ -47,11 +47,6 @@ log "Cleaning up brew cache..."
 brew cleanup;
 
 
-# Install atom packages
-log "Installing atom packages..."
-grep -v '^#' $HOME/own/workenv/setup.d/atom_packages | xargs apm install
-
-
 # Install package managers
 #log "Installing package managers..."
 #rscript -e 'install.packages("packrat",repos="https://cran.rstudio.com")'
