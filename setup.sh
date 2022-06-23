@@ -75,5 +75,18 @@ ln -sf .dot/vimrc $HOME/.vimrc
 ln -sf ../.dot/atom_config.cson $HOME/.atom/config.cson
 
 
-# Overwrite some macOS environment default settings
+# macOS configuration
 defaults write com.apple.screencapture location $HOME/Downloads
+
+defaults write com.apple.Dock autohide 1
+defaults write com.apple.Dock magnification 1
+defaults write com.apple.Dock show-recents 0
+
+defaults write com.apple.AppleMultitouchMouse MouseButtonMode TwoButton
+defaults write com.apple.AppleMultitouchMouse MouseOneFingerDoubleTapGesture 1
+
+defaults write com.apple.AppleMultitouchTrackpad Clicking 1
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag 1
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerHorizSwipeGesture 0
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerTapGesture 2
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerVertSwipeGesture 0
