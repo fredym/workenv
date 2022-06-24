@@ -22,8 +22,7 @@ configuration files. This script will:
 Changing the hostname requires a reboot. After rebooting you can continue the
 setup process from the `workenv` directory:
 
-    cd $HOME/own/workenv
-    bash setup.sh
+    bash ~/fredym/workenv/setup.sh
 
 
 
