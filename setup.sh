@@ -14,6 +14,10 @@ log () {
 }
 
 
+# Configure the script
+workenv_path="$HOME/fredym/workenv"
+
+
 # Install brew
 brew --version &>/dev/null
 
@@ -29,7 +33,7 @@ fi
 
 # Install brew formulae
 log "Installing brew formulae..."
-grep -v '^#' $HOME/own/workenv/setup.d/brew_formulae | xargs brew install --force-bottle
+grep -v '^#' "$workenv_path"/setup.d/brew_formulae | xargs brew install --force-bottle
 
 
 # Update outdated brew formulae
@@ -39,7 +43,7 @@ brew upgrade;
 
 # Install brew casks
 log "Installing brew casks..."
-grep -v '^#' $HOME/own/workenv/setup.d/brew_casks | xargs brew install --cask
+grep -v '^#' "$workenv_path"/setup.d/brew_casks | xargs brew install --cask
 
 
 # Cleanup brew cache
@@ -63,7 +67,7 @@ log "Installing config files..."
 
 # Create symlink in homedir to config directory
 # This helps having short paths
-ln -sfh $HOME/own/workenv/config $HOME/.dot
+ln -sfh "$workenv_path"/config $HOME/.dot
 
 
 # Replace config files in homedir with symlinks to .dot config files

@@ -14,6 +14,10 @@ log () {
 }
 
 
+# Configure the script
+workenv_path="$HOME/fredym/workenv"
+
+
 # Set bash as the default shell
 chsh -s /bin/bash
 log "Default shell set to bash"
@@ -31,15 +35,15 @@ fi
 
 
 # Setup the workenv directory
-if [ ! -d "$HOME/own/workenv" ]; then
+if [ ! -d "$workenv_path" ]; then
   log "Setting up the workenv directory"
 
   # Create the workenv directory
-  mkdir -p $HOME/own/workenv
+  mkdir -p "$workenv_path"
 
   # Clone the workenv repo
-  git clone https://github.com/fredym/workenv.git $HOME/own/workenv
-  git -C $HOME/own/workenv remote set-url origin git@github.com:fredym/workenv.git
+  git clone https://github.com/fredym/workenv.git "$workenv_path"
+  git -C "$workenv_path" remote set-url origin git@github.com:fredym/workenv.git
 else
   log "Workenv directory already setup"
 fi
