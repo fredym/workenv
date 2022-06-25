@@ -41,11 +41,6 @@ log "Updating outdated brew formulae..."
 brew upgrade;
 
 
-# Install brew casks
-log "Installing brew casks..."
-grep -v '^#' "$workenv_path"/setup.d/brew_casks | xargs brew install --cask
-
-
 # Cleanup brew cache
 log "Cleaning up brew cache..."
 brew cleanup;
