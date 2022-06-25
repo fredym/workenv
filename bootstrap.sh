@@ -51,7 +51,7 @@ fi
 
 # Symlink and download useful tools and files
 log "Symlinking useful tools and files..."
-ln -sf /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/local/bin/airport
+sudo ln -sf /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/local/bin/airport
 
 
 # Install config files
