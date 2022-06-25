@@ -73,6 +73,8 @@ ln -sf ../.dot/atom_config.cson $HOME/.atom/config.cson
 
 
 # macOS configuration
+log "Updating macOS defaults..."
+
 defaults write com.apple.screencapture location $HOME/Downloads
 
 defaults write com.apple.Dock autohide 1
