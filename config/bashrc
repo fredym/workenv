@@ -39,4 +39,4 @@ export PATH="$HOME/fredym/workenv/tools:$PATH"
 
 # brew
 export HOMEBREW_NO_BOTTLE_SOURCE_FALLBACK=1
-eval "$(brew shellenv)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
