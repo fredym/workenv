@@ -69,7 +69,6 @@ ln -sf .dot/bashrc $HOME/.bashrc
 ln -sf .dot/bash_profile $HOME/.bash_profile
 ln -sf .dot/gitconfig $HOME/.gitconfig
 ln -sf .dot/vimrc $HOME/.vimrc
-ln -sf ../.dot/atom_config.cson $HOME/.atom/config.cson
 
 
 # macOS configuration
