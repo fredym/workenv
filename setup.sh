@@ -34,13 +34,3 @@ fi
 # Install brew formulae
 log "Installing brew formulae..."
 grep -v '^#' "$workenv_path"/setup.d/brew_packages | xargs brew install --force-bottle
-
-
-# Update outdated brew formulae
-log "Updating outdated brew formulae..."
-brew upgrade;
-
-
-# Cleanup brew cache
-log "Cleaning up brew cache..."
-brew cleanup;
