@@ -2,7 +2,7 @@ authy
 awscli
 datagrip
 diffmerge
-docker
+homebrew/cask/docker
 dropbox
 evernote
 ffmpeg
