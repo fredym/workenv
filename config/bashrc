@@ -15,6 +15,15 @@ export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 PROMPT_COMMAND="echo -ne '\033]0;$(hostname)\007'"
 
 
+# tools
+export PATH="$HOME/fredym/workenv/tools:$PATH"
+
+
+# brew
+export HOMEBREW_NO_BOTTLE_SOURCE_FALLBACK=1
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+
 # bash completion
 if type brew &>/dev/null
 then
@@ -34,12 +43,3 @@ fi
 # prompt
 export GIT_PS1_SHOWDIRTYSTATE=1
 export PS1="\[\033[01;34m\]$(hostname):\w\$(__git_ps1)\n$ \[\033[00m\]"
-
-
-# tools
-export PATH="$HOME/fredym/workenv/tools:$PATH"
-
-
-# brew
-export HOMEBREW_NO_BOTTLE_SOURCE_FALLBACK=1
-eval "$(/opt/homebrew/bin/brew shellenv)"
