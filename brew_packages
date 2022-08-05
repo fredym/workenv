@@ -1,5 +1,6 @@
 authy
 awscli
+aws-vault
 datagrip
 diffmerge
 homebrew/cask/docker
