@@ -1,6 +1,10 @@
 # .alias
 
 
+# aws
+alias vault='aws-vault exec monolith-production-developer --'
+
+
 # bash
 alias cl='clear'
 alias df='df -h'
