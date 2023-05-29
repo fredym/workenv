@@ -23,6 +23,7 @@ pyenv
 rectangle
 rsync
 slack
+sops
 spotify
 telegram
 terraform
