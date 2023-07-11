@@ -51,6 +51,7 @@ fi
 
 # Symlink and download useful tools and files
 log "Symlinking useful tools and files..."
+sudo mkdir -p /usr/local/bin
 sudo ln -sf /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/local/bin/airport
 
 
