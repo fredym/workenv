@@ -4,14 +4,13 @@
 [push]
 	default = current
 [diff]
-	tool = diffmerge
-[difftool "diffmerge"]
-	cmd = diffmerge \"$LOCAL\" \"$REMOTE\" > /dev/null 2>&1
+	tool = vscode
+[difftool "vscode"]
+	cmd = code --wait --diff $LOCAL $REMOTE
 [merge]
-	tool = diffmerge
-[mergetool "diffmerge"]
-	trustExitCode = true
-	cmd = diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\" > /dev/null 2>&1
+	tool = vscode
+[mergetool "vscode"]
+	cmd = code --wait $MERGED
 [init]
 	templatedir = ~/.dot/git_template
 [pull]
