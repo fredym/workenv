@@ -3,4 +3,4 @@ rsync -avz --delete \
   --exclude-from $HOME/fredym/workenv/tools/bk.d/bk-exclude \
   --include-from $HOME/fredym/workenv/tools/bk.d/bk-include \
   --exclude '*' \
-  $HOME/ $HOME/Library/CloudStorage/Dropbox/aleph
+  $HOME/ $HOME/Library/CloudStorage/Dropbox
