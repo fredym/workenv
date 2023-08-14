@@ -1,4 +1,0 @@
-#!/bin/bash
-echo "THIS OPERATION WILL OVERWRITE UNSAVED WORK"
-read -p "Press RETURN to continue or Ctrl+C to cancel..."
-rsync -avz $HOME/Library/CloudStorage/Dropbox/ $HOME
