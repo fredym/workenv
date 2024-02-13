@@ -13,6 +13,7 @@ keka
 lynx
 maccy
 pyenv
+pyenv-virtualenv
 rectangle
 rsync
 slack
