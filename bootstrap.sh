@@ -68,7 +68,6 @@ ln -sfh "$workenv_path"/config $HOME/.dot
 ln -sf .dot/alias $HOME/.alias
 ln -sf .dot/bashrc $HOME/.bashrc
 ln -sf .dot/bash_profile $HOME/.bash_profile
-ln -sf .dot/code_workspace $HOME/.default.code-workspace
 ln -sf .dot/gitconfig $HOME/.gitconfig
 ln -sf .dot/vimrc $HOME/.vimrc
 
