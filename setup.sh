@@ -15,7 +15,7 @@ log () {
 
 
 # Configure the script
-workenv_path="$HOME/fredym/workenv"
+workenv_path="$HOME/repos/fredym/workenv"
 
 
 # Install brew

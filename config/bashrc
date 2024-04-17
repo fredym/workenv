@@ -16,7 +16,7 @@ PROMPT_COMMAND="echo -ne '\033]0;$(hostname)\007'"
 
 
 # tools
-export PATH="$HOME/fredym/workenv/tools:$PATH"
+export PATH="$HOME/repos/fredym/workenv/tools:$PATH"
 
 
 # brew
