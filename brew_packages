@@ -8,6 +8,7 @@ git
 google-chrome
 gpg
 homebrew/cask/docker
+homebrew/cask/wireshark
 jq
 keka
 lynx
