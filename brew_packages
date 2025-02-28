@@ -22,7 +22,6 @@ rectangle
 rsync
 sops
 telegram
-terraform
 ticktick
 tree
 ubiquiti-unifi-controller
