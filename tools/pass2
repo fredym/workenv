@@ -20,7 +20,7 @@ function calc {
 read -rs -p 'M: ' m
 echo '' # line break
 
-calc $m "A"
+calc $m ""
 echo '' # line break
 
 read -rs -p 'K: ' k
