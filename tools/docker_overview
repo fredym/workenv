@@ -10,9 +10,6 @@ title()
 }
 
 
-title "HOSTS:"
-docker-machine ls
-
 title "DISK USAGE:"
 du -hd0 ~/Library/Containers/com.docker.docker | awk '{ print $1 }'
 
