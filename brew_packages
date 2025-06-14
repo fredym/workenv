@@ -2,12 +2,15 @@ anydesk
 awscli
 brave-browser
 chatgpt
+colima
+docker
+docker-compose
+docker-buildx
 dropbox
 evernote
 ffmpeg
 git
 gpg
-homebrew/cask/docker
 homebrew/cask/wireshark
 internxt-drive
 jq
