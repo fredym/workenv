@@ -12,13 +12,13 @@ ffmpeg
 git
 gpg
 homebrew/cask/wireshark
-internxt-drive
 jq
 keka
 kid3
 lynx
 maccy
 nvm
+proton-drive
 pyenv
 pyenv-virtualenv
 rectangle
