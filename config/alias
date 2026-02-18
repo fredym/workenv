@@ -18,7 +18,7 @@ alias serve='ruby -run -e httpd . -p 4000'
 # docker
 alias d='docker'
 alias dc='docker-compose'
-alias dclean='docker images | grep "<none>" | awk '\''{print $3}'\'' | xargs docker rmi'
+alias dclean='docker images -a | grep "<none>" | awk '\''{print $3}'\'' | xargs docker rmi'
 alias denv='eval $(docker-machine env)'
 alias dm='docker-machine'
 alias ds='docker_overview'
